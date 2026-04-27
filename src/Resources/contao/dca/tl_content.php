@@ -31,10 +31,8 @@ $arrAllowedCTEs = ['headline', 'text', 'html', 'list', 'table', 'code', 'image',
 foreach (array_keys($GLOBALS['TL_DCA']['tl_content']['palettes']) as $palette) {
     if (in_array($palette, $arrAllowedCTEs, true)) {
         PaletteManipulator::create()
-            ->addLegend('klaro_legend', ['template_legend', 'template_legend:hide'], PaletteManipulator::POSITION_BEFORE)
-            ->addField('klaro_service', 'klaro_legend', PaletteManipulator::POSITION_AFTER)
-            ->addField('klaro_consent', 'klaro_legend', PaletteManipulator::POSITION_AFTER)
-            ->addField('klaro_state', 'klaro_legend', PaletteManipulator::POSITION_AFTER)
+            ->addLegend('klaro_legend', ['invisible_legend', 'invisible_legend:hide'], PaletteManipulator::POSITION_BEFORE)
+            ->addField(['klaro_service', 'klaro_consent', 'klaro_state'], 'klaro_legend', PaletteManipulator::POSITION_APPEND)
             ->applyToPalette($palette, 'tl_content')
         ;
     }
@@ -59,7 +57,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['klaro_consent'] = [
     'search' => true,
     'inputType' => 'select',
     'options' => $GLOBALS['TL_LANG']['klaro']['klaro_consent']['options'],
-    'eval' => ['maxlength' => 200, 'tl_class' => 'w25'],
+    'eval' => ['maxlength' => 200, 'tl_class' => 'w50'],
     'sql' => "char(1) NOT NULL default ''",
 ];
 
@@ -68,6 +66,6 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['klaro_state'] = [
     'search' => true,
     'inputType' => 'select',
     'options' => $GLOBALS['TL_LANG']['klaro']['klaro_state']['options'],
-    'eval' => ['tl_class' => 'w25'],
+    'eval' => ['tl_class' => 'w50'],
     'sql' => "varchar(20) NOT NULL default ''",
 ];

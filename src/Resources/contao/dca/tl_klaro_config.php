@@ -121,7 +121,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
             'sorting' => false,
             'reference' => &$GLOBALS['TL_LANG']['klaro']['config']['loading_mode_options'],
             'options' => &$GLOBALS['TL_LANG']['klaro']['config']['loading_mode_options'], // https://heyklaro.com/docs/integration/overview
-            'eval' => ['tl_class' => 'w25'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 50,
@@ -132,7 +132,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'myConfigVariableName' => [
             'exclude' => true,
             'inputType' => 'text',
-            'eval' => ['tl_class' => 'w25'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 50,
@@ -143,7 +143,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'testing' => [
             'exclude' => true,
             'inputType' => 'checkbox',
-            'eval' => ['tl_class' => 'w25'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 1,
@@ -154,7 +154,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'elementID' => [
             'exclude' => true,
             'inputType' => 'text',
-            'eval' => ['tl_class' => 'w20 clr'],
+            'eval' => ['tl_class' => 'w50 clr'],
             'sql' => [
                 'type' => 'string',
                 'length' => 50,
@@ -165,7 +165,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'storageName' => [
             'exclude' => true,
             'inputType' => 'text',
-            'eval' => ['tl_class' => 'w20'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 50,
@@ -181,7 +181,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
             'sorting' => true,
             'reference' => &$GLOBALS['TL_LANG']['klaro']['config']['storage_method_options'],
             'options' => &$GLOBALS['TL_LANG']['klaro']['config']['storage_method_options'],
-            'eval' => ['tl_class' => 'w20'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 50,
@@ -192,7 +192,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'cookieDomain' => [
             'exclude' => true,
             'inputType' => 'text',
-            'eval' => ['tl_class' => 'w20'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 50,
@@ -203,7 +203,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'cookieExpiresAfterDays' => [
             'exclude' => true,
             'inputType' => 'text',
-            'eval' => ['tl_class' => 'w20'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'integer',
                 'unsigned' => false,
@@ -215,7 +215,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'htmlTexts' => [
             'exclude' => true,
             'inputType' => 'checkbox',
-            'eval' => ['tl_class' => 'w25'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 1,
@@ -226,7 +226,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'noticeAsModal' => [
             'exclude' => true,
             'inputType' => 'checkbox',
-            'eval' => ['tl_class' => 'w25'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 1,
@@ -237,7 +237,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'default' => [
             'exclude' => true,
             'inputType' => 'checkbox',
-            'eval' => ['tl_class' => 'w25'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 1,
@@ -248,7 +248,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'mustConsent' => [
             'exclude' => true,
             'inputType' => 'checkbox',
-            'eval' => ['tl_class' => 'w25'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 1,
@@ -259,7 +259,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'acceptAll' => [
             'exclude' => true,
             'inputType' => 'checkbox',
-            'eval' => ['tl_class' => 'w25'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 1,
@@ -270,7 +270,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'hideDeclineAll' => [
             'exclude' => true,
             'inputType' => 'checkbox',
-            'eval' => ['tl_class' => 'w25'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 1,
@@ -281,7 +281,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'hideLearnMore' => [
             'exclude' => true,
             'inputType' => 'checkbox',
-            'eval' => ['tl_class' => 'w25'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 1,

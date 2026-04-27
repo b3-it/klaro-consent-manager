@@ -119,7 +119,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'lang_code' => [
             'exclude' => true,
             'inputType' => 'text',
-            'eval' => ['mandatory' => true, 'tl_class' => 'w25'],
+            'eval' => ['mandatory' => true, 'tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 10,
@@ -190,26 +190,20 @@ $GLOBALS['TL_DCA'][$strTable] = [
                         'exclude' => true,
                         'sorting' => false,
                         'inputType' => 'text',
-                        'eval' => ['mandatory' => false, 'tl_class' => '', 'style' => ''],
+                        'eval' => ['mandatory' => false],
                     ],
                     'translation' => [
                         'label' => $GLOBALS['TL_LANG'][$strTable]['purposes_translation'],
                         'exclude' => true,
                         'sorting' => false,
                         'inputType' => 'text',
-                        'eval' => ['tl_class' => ''],
                     ],
                     'description' => [
                         'label' => $GLOBALS['TL_LANG'][$strTable]['purposes_description'],
                         'exclude' => true,
                         'sorting' => false,
                         'inputType' => 'textarea',
-                        'eval' => [
-                            'rte' => 'tinyMCEmulti|',
-                            'rows' => '1',
-                            'tl_class' => 'w50',
-                            'style' => 'height:100px;',
-                        ],
+                        'eval' => ['rte' => 'tinyMCE', 'rows' => '1',],
                     ],
                 ],
             ],
@@ -265,7 +259,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'ccAcceptAlways' => [
             'exclude' => true,
             'inputType' => 'text',
-            'eval' => ['mandatory' => false, 'tl_class' => 'w25'],
+            'eval' => ['mandatory' => false, 'tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 30,
@@ -277,7 +271,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'ccAcceptOnce' => [
             'exclude' => true,
             'inputType' => 'text',
-            'eval' => ['mandatory' => false, 'tl_class' => 'w25'],
+            'eval' => ['mandatory' => false, 'tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 30,
@@ -301,9 +295,10 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'learnMore' => [
             'exclude' => true,
             'inputType' => 'text',
-            'eval' => ['tl_class' => 'w25'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
+                'length' => 255,
                 'fixed' => true,
                 'default' => '',
             ],
@@ -312,9 +307,10 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'decline' => [
             'exclude' => true,
             'inputType' => 'text',
-            'eval' => ['tl_class' => 'w25'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
+                'length' => 255,
                 'fixed' => true,
                 'default' => '',
             ],
@@ -323,9 +319,10 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'ok' => [
             'exclude' => true,
             'inputType' => 'text',
-            'eval' => ['tl_class' => 'w25'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
+                'length' => 255,
                 'fixed' => true,
                 'default' => '',
             ],
@@ -334,9 +331,10 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'acceptAll' => [
             'exclude' => true,
             'inputType' => 'text',
-            'eval' => ['tl_class' => 'w25'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
+                'length' => 255,
                 'fixed' => true,
                 'default' => '',
             ],
@@ -345,9 +343,10 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'acceptSelected' => [
             'exclude' => true,
             'inputType' => 'text',
-            'eval' => ['tl_class' => 'w25'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
+                'length' => 255,
                 'fixed' => true,
                 'default' => '',
             ],

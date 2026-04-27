@@ -118,7 +118,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'name' => [
             'exclude' => true,
             'inputType' => 'text',
-            'eval' => ['mandatory' => true, 'tl_class' => 'w25'],
+            'eval' => ['mandatory' => true, 'tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
@@ -133,7 +133,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'default' => [
             'exclude' => true,
             'inputType' => 'checkbox',
-            'eval' => ['tl_class' => 'w25 m12'],
+            'eval' => ['tl_class' => 'w50 m12'],
             'sql' => [
                 'type' => 'string',
                 'length' => 1,
@@ -155,7 +155,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'purposes' => [
             'exclude' => true,
             'inputType' => 'checkboxWizard',
-            'eval' => ['mandatory' => true, 'multiple' => true, 'tl_class' => 'w25'],
+            'eval' => ['mandatory' => true, 'multiple' => true, 'tl_class' => 'w50'],
             'sql' => [
                 'type' => 'text',
                 'length' => 2048,
@@ -210,7 +210,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'required' => [
             'exclude' => true,
             'inputType' => 'checkbox',
-            'eval' => ['tl_class' => 'w25 m12'],
+            'eval' => ['tl_class' => 'w50 m12'],
             'sql' => [
                 'type' => 'string',
                 'length' => 1,
@@ -226,7 +226,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'optOut' => [
             'exclude' => true,
             'inputType' => 'checkbox',
-            'eval' => ['tl_class' => 'w25 m12'],
+            'eval' => ['tl_class' => 'w50 m12'],
             'sql' => [
                 'type' => 'string',
                 'length' => 1,
@@ -243,7 +243,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
          */
         'onlyOnce' => ['exclude' => true,
             'inputType' => 'checkbox',
-            'eval' => ['tl_class' => 'w25 m12'],
+            'eval' => ['tl_class' => 'w50 m12'],
             'sql' => [
                 'type' => 'string',
                 'length' => 1,
@@ -257,7 +257,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'contextualConsentOnly' => [
             'exclude' => true,
             'inputType' => 'checkbox',
-            'eval' => ['tl_class' => 'w25 m12'],
+            'eval' => ['tl_class' => 'w50 m12'],
             'sql' => [
                 'type' => 'string',
                 'length' => 1,

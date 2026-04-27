@@ -101,7 +101,7 @@ $GLOBALS['TL_DCA'][$strTable] = [
         'klaro_key' => [
             'exclude' => true,
             'inputType' => 'text',
-            'eval' => ['mandatory' => true, 'tl_class' => 'w25'],
+            'eval' => ['mandatory' => true, 'tl_class' => 'w50'],
             'sql' => [
                 'type' => 'string',
                 'length' => 20,
