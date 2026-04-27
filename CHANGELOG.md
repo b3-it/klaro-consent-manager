@@ -10,8 +10,9 @@ Types of changes
     Security in case of vulnerabilities.
 )
 
-## [1.3.2](https://github.com/pdir/klaro-consent-manager/tree/1.3.2) – 2026-04-01
+## [1.3.2](https://github.com/pdir/klaro-consent-manager/tree/1.3.2) – 2026-04-27
 
+- [Fixed] Type error in GeneratePageHook
 - [Fixed] Endless loop during database update caused by missing field lengths in tl_klaro_translation (length set to 255).
 - [Fixed] Backend form layout (DCA) adjustments – column widths updated from w25 to w50 for better display in newer Contao versions.
 
